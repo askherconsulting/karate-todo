@@ -1,0 +1,548 @@
+{
+    "_id": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+    "colName": "MoT Automation Week API Challenge",
+    "created": "2023-10-18T13:51:00.725Z",
+    "sortNum": 10000,
+    "folders": [
+        {
+            "_id": "f0c0614d-f5d3-43f2-a27f-c5ad31bd26be",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-10-18T13:51:00.730Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "3691d555-eef2-4714-8906-5b7d64756b4a",
+            "name": "SETUP",
+            "containerId": "f0c0614d-f5d3-43f2-a27f-c5ad31bd26be",
+            "created": "2023-10-18T13:51:00.731Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "Booking",
+            "containerId": "",
+            "created": "2023-10-18T13:51:00.732Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "3c99580c-257e-4e23-acf3-811c4ac85747",
+            "name": "SETUP",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "created": "2023-10-18T13:51:00.733Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "b3c61ba2-8baa-4d9c-80ec-831735b8a499",
+            "name": "Branding",
+            "containerId": "",
+            "created": "2023-10-18T13:51:00.734Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "a2deb4fa-2911-4c43-9d74-56cc7c08f309",
+            "name": "SETUP",
+            "containerId": "b3c61ba2-8baa-4d9c-80ec-831735b8a499",
+            "created": "2023-10-18T13:51:00.735Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "db06f3e8-84c2-4b8e-ab44-1f94f4477966",
+            "name": "Report",
+            "containerId": "",
+            "created": "2023-10-18T13:51:00.736Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "7ca71ac3-5f7e-434c-a1bc-73f6f4b94303",
+            "name": "SETUP",
+            "containerId": "db06f3e8-84c2-4b8e-ab44-1f94f4477966",
+            "created": "2023-10-18T13:51:00.737Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "name": "Messaging",
+            "containerId": "",
+            "created": "2023-10-18T13:51:00.738Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "2ac65abf-fdcf-48ba-9d04-e89312979d94",
+            "name": "SETUP",
+            "containerId": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "created": "2023-10-18T13:51:00.739Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "name": "Room",
+            "containerId": "",
+            "created": "2023-10-18T13:51:00.740Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "a0b5bf8d-a1ca-4db6-9d6d-d727c9cc2d44",
+            "name": "SETUP",
+            "containerId": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "created": "2023-10-18T13:51:00.741Z",
+            "sortNum": 120000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "89d180f1-4a27-4f37-8031-9c977dce9c86",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "3691d555-eef2-4714-8906-5b7d64756b4a",
+            "name": "REMOVE ENV VARS",
+            "url": "https://postman-echo.com/delay/0",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-18T13:51:00.730Z",
+            "modified": "2023-10-18T13:51:00.730Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "1082fa5c-64d9-455e-a6ad-791602daa389",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "f0c0614d-f5d3-43f2-a27f-c5ad31bd26be",
+            "name": "createToken",
+            "url": "{{host}}/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-18T13:51:00.731Z",
+            "modified": "2023-10-18T13:51:00.731Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\" : \"{{username}}\",\r\n    \"password\" : \"{{password}}\"\r\n}"
+            }
+        },
+        {
+            "_id": "f2b5e4b6-63fc-4b36-b74f-c7abd38f4c29",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "3c99580c-257e-4e23-acf3-811c4ac85747",
+            "name": "REMOVE ENV VARS",
+            "url": "https://postman-echo.com/delay/0",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-18T13:51:00.732Z",
+            "modified": "2023-10-18T13:51:00.732Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "11e176d8-cffb-4858-8cc7-2af3daf95874",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "createBooking",
+            "url": "{{host}}/booking/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-18T13:51:00.733Z",
+            "modified": "2023-10-18T13:51:00.733Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"bookingdates\": {\r\n        \"checkin\": \"{{checkin}}\",\r\n        \"checkout\": \"{{checkout}}\"\r\n    },\r\n    \"depositpaid\": {{$randomBoolean}},\r\n    \"firstname\": \"{{$randomFirstName}}\",\r\n    \"lastname\": \"{{$randomLastName}}\",\r\n    \"roomid\": \"{{roomid}}\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"phone\": \"{{$randomPhoneNumber}}\"\r\n}"
+            }
+        },
+        {
+            "_id": "bffbff5b-dec9-4360-97e1-0e5d45afc9b7",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "getBooking",
+            "url": "{{host}}/booking/{{bookingid}}",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-18T13:51:00.734Z",
+            "modified": "2023-10-18T13:51:00.734Z",
+            "headers": []
+        },
+        {
+            "_id": "8b70c763-d76a-44ab-82af-ab400e86ae3d",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "getBookings",
+            "url": "{{host}}/booking",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-18T13:51:00.735Z",
+            "modified": "2023-10-18T13:51:00.735Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "ccaa0c10-0809-4b2f-adcb-ca20d1df5fda",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "updateBooking",
+            "url": "{{host}}/booking/{id}",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-10-18T13:51:00.736Z",
+            "modified": "2023-10-18T13:51:00.736Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "{{bookingid}}",
+                    "isDisabled": false,
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"depositpaid\": {{$randomBoolean}},\n    \"firstname\": \"{{$randomFirstName}}\",\n    \"lastname\": \"{{$randomLastName}}\",\n    \"bookingdates\": {\n        \"checkin\": \"{{checkin}}\",\n        \"checkout\": \"{{checkout}}\"\n    },\n    \"bookingid\": \"{{bookingid}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"phone\": \"{{$randomPhoneNumber}}\",\n    \"roomid\": \"{{roomid}}\"\n}"
+            }
+        },
+        {
+            "_id": "c592de54-0021-4da6-8cc6-4b0e01af940b",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "deleteBooking",
+            "url": "{{host}}/booking/{{bookingid}}",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-10-18T13:51:00.737Z",
+            "modified": "2023-10-18T13:51:00.737Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "password123"
+                }
+            }
+        },
+        {
+            "_id": "20a7c6d2-ffcb-4cc7-bed1-afd60a15a0c1",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "0e27838c-e444-4cbc-90bb-6778997a5088",
+            "name": "partialUpdateBooking",
+            "url": "{{host}}/booking/{{bookingid}}",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-10-18T13:51:00.738Z",
+            "modified": "2023-10-18T13:51:00.738Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"bookingdates\": {\n        \"checkin\": \"{{checkin}}\",\n        \"checkout\": \"{{checkout}}\"\n    },\n    \"bookingid\": {{bookingid}},\n    \"depositpaid\": {{$randomBoolean}},\n    \"firstname\": \"{{$randomFirstName}}\",\n    \"lastname\": \"{{$randomLastName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"phone\": \"{{$randomPhoneNumber}}\",\n    \"roomid\": {{roomid}}\n}"
+            }
+        },
+        {
+            "_id": "a34486e4-5ee1-4763-aed3-7b16a9750b1c",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "a2deb4fa-2911-4c43-9d74-56cc7c08f309",
+            "name": "REMOVE ENV VARS",
+            "url": "https://postman-echo.com/delay/0",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-10-18T13:51:00.739Z",
+            "modified": "2023-10-18T13:51:00.739Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "d37b9590-432f-4858-b048-48e43822d216",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "b3c61ba2-8baa-4d9c-80ec-831735b8a499",
+            "name": "updateBranding",
+            "url": "{{host}}/branding/",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-10-18T13:51:00.740Z",
+            "modified": "2023-10-18T13:51:00.740Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Shady Meadows B&B\",\r\n    \"map\": {\r\n        \"latitude\": \"46.187573\",\r\n        \"longitude\": \"-123.832640\"\r\n    },\r\n    \"logoUrl\": \"https://www.mwtestconsultancy.co.uk/img/rbp-logo.png\",\r\n    \"description\": \"Welcome to The Goonies House, a delightful Bed & Breakfast nestled in the hills of Astoria, Oregon. A place so beautiful you will never want to leave. All our rooms have comfortable beds and we provide breakfast from the locally sourced supermarket. It is a delightful place.\",\r\n    \"contact\": {\r\n        \"name\": \"Shady Meadows B&B\",\r\n        \"address\": \"The Old Farmhouse, Shady Street, Newfordburyshire, NE1 410S\",\r\n        \"phone\": \"012345678901\",\r\n        \"email\": \"fake@fakeemail.com\"\r\n    }\r\n}"
+            }
+        },
+        {
+            "_id": "d3427658-0eef-447d-b51c-aeaa97346de1",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "b3c61ba2-8baa-4d9c-80ec-831735b8a499",
+            "name": "getBranding",
+            "url": "{{host}}/branding/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-10-18T13:51:00.741Z",
+            "modified": "2023-10-18T13:51:00.741Z",
+            "headers": []
+        },
+        {
+            "_id": "d958ba59-9361-46e3-9dfd-ea2bb6c5026b",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "7ca71ac3-5f7e-434c-a1bc-73f6f4b94303",
+            "name": "REMOVE ENV VARS",
+            "url": "https://postman-echo.com/delay/0",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-10-18T13:51:00.742Z",
+            "modified": "2023-10-18T13:51:00.742Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "dc01e41d-d0b7-434b-842b-9cbd9812538f",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "db06f3e8-84c2-4b8e-ab44-1f94f4477966",
+            "name": "getReport",
+            "url": "{{host}}/report/",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-10-18T13:51:00.743Z",
+            "modified": "2023-10-18T13:51:00.743Z",
+            "headers": []
+        },
+        {
+            "_id": "7e1d458e-ae34-4969-b490-90481d92a78b",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "db06f3e8-84c2-4b8e-ab44-1f94f4477966",
+            "name": "getSpecificRoomReport",
+            "url": "{{host}}/report/room/{id}",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-10-18T13:51:00.744Z",
+            "modified": "2023-10-18T13:51:00.744Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "{{roomid}}",
+                    "isDisabled": false,
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "cfeeddf1-264f-418b-b6d9-695016e67a7a",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "2ac65abf-fdcf-48ba-9d04-e89312979d94",
+            "name": "REMOVE ENV VARS",
+            "url": "https://postman-echo.com/delay/0",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-10-18T13:51:00.745Z",
+            "modified": "2023-10-18T13:51:00.745Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "d30debea-faa8-44cf-8e6f-d7ae80e87ba2",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "name": "postMessage",
+            "url": "{{host}}/message/",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-10-18T13:51:00.746Z",
+            "modified": "2023-10-18T13:51:00.746Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"{{$randomUserName}}\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"phone\": \"{{$randomPhoneNumber}}\",\r\n    \"subject\": \"{{$randomBsBuzz}}\",\r\n    \"description\": \"{{$randomLoremSentences}}\"\r\n}"
+            }
+        },
+        {
+            "_id": "7ac9eb90-aad1-4eba-804a-e89e673a53ea",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "name": "putMessageRead",
+            "url": "{{host}}/message/{{messageid}}/read",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-10-18T13:51:00.747Z",
+            "modified": "2023-10-18T13:51:00.747Z",
+            "headers": []
+        },
+        {
+            "_id": "95b348c5-9d1f-48d5-b305-c27b99a2e8fd",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "name": "getMessage",
+            "url": "https://automationintesting.online/message/{{messageid}}",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-10-18T13:51:00.748Z",
+            "modified": "2023-10-18T13:51:00.748Z",
+            "headers": []
+        },
+        {
+            "_id": "3c58ee25-4291-4e3b-8e8e-dd18a5496cd4",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "name": "getMessages",
+            "url": "{{host}}/message/",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2023-10-18T13:51:00.749Z",
+            "modified": "2023-10-18T13:51:00.749Z",
+            "headers": []
+        },
+        {
+            "_id": "ca981fb5-c15d-42d2-84bf-82ec4f67daad",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "26bc4acd-dbb2-4e3b-a787-f63ac604a6a8",
+            "name": "getMessageCount",
+            "url": "{{host}}/message/count",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-10-18T13:51:00.750Z",
+            "modified": "2023-10-18T13:51:00.750Z",
+            "headers": []
+        },
+        {
+            "_id": "dbe12da1-deba-473b-8d95-36f452594557",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "a0b5bf8d-a1ca-4db6-9d6d-d727c9cc2d44",
+            "name": "REMOVE ENV VARS",
+            "url": "https://postman-echo.com/delay/0",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-10-18T13:51:00.751Z",
+            "modified": "2023-10-18T13:51:00.751Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "f6341bc8-166e-4ec4-8943-10bbffce7f2b",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "name": "getRoom",
+            "url": "{{host}}/room/{{roomid}}",
+            "method": "GET",
+            "sortNum": 230000,
+            "created": "2023-10-18T13:51:00.752Z",
+            "modified": "2023-10-18T13:51:00.752Z",
+            "headers": [
+                {
+                    "name": "Cookie",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "5b8a4993-1050-4334-baf4-80b38c882499",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "name": "postRoom",
+            "url": "{{host}}/room/",
+            "method": "POST",
+            "sortNum": 240000,
+            "created": "2023-10-18T13:51:00.753Z",
+            "modified": "2023-10-18T13:51:00.753Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"roomid\": \"{{random_number}}\",\r\n    \"roomName\": \"beths room\",\r\n    \"type\": \"Single\",\r\n    \"accessible\": \"true\",\r\n    \"image\": \"https://www.mwtestconsultancy.co.uk/img/room1.jpg\",\r\n    \"description\": \"Please enter a description for this room\",\r\n        \"features\": [\r\n        \"WiFi\",\r\n        \"Views\"\r\n    ],\r\n    \"roomPrice\": \"{{random_number}}\"\r\n\r\n}"
+            }
+        },
+        {
+            "_id": "7c372048-8bd1-4ca4-97d6-c3f77650a50a",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "name": "getRooms",
+            "url": "{{host}}/room/",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2023-10-18T13:51:00.754Z",
+            "modified": "2023-10-18T13:51:00.754Z",
+            "headers": []
+        },
+        {
+            "_id": "973fb08f-f1b3-4e91-a62a-ca570e241f27",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "name": "putRoom",
+            "url": "{{host}}/room/{id}",
+            "method": "PUT",
+            "sortNum": 260000,
+            "created": "2023-10-18T13:51:00.755Z",
+            "modified": "2023-10-18T13:51:00.755Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "{{roomid}}",
+                    "isDisabled": false,
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"accessible\": {{$randomBoolean}},\r\n  \"description\": \"lovely room\",\r\n  \"features\": [\r\n    \"wifi\"\r\n  ],\r\n  \"image\": \"{{$randomCatsImage}}\",\r\n  \"roomName\": \"Beths room\",\r\n  \"roomNumber\": {{roomNumber}},\r\n  \"roomPrice\": {{$randomPrice}},\r\n  \"roomid\": {{roomid}},\r\n  \"type\": \"Double\"\r\n}"
+            }
+        },
+        {
+            "_id": "7cc35e4f-e908-4041-b4a3-eec278879fd2",
+            "colId": "cbd9ad94-6537-4e83-94a5-d974bf27309c",
+            "containerId": "5f31447c-7794-45d7-821e-4ed7132e8c83",
+            "name": "deleteRoom",
+            "url": "{{host}}/room/{{roomid}}",
+            "method": "DELETE",
+            "sortNum": 270000,
+            "created": "2023-10-18T13:51:00.756Z",
+            "modified": "2023-10-18T13:51:00.756Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        }
+    ]
+}
